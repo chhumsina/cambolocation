@@ -1,0 +1,132 @@
+/* Default tags and Bootstrap classes */
+
+body {
+    font-family: 'PT Sans Caption', sans-serif;
+    padding: 40px 0;
+    background: #efefef;
+}
+
+.lead {
+    background: none repeat scroll 0 0 #FFFFFF;
+    box-shadow: 1px 1px 2px #CCCCCC;
+    font-size: 21px;
+    font-weight: 100;
+    padding: 18px 12px 21px 15px;
+    text-align: center;
+}
+
+.container {
+    width: 90%;
+    margin-top: -40px;
+}
+
+.emailSection {
+    display: none;
+}
+
+/* Grid */
+
+#posts { margin: 30px auto 0; }
+.post {
+    margin: 0 0 50px;
+    text-align: center;
+    word-wrap: break-word;
+    padding-top: 10px;
+    width: 100%;
+    box-shadow: 1px 1px 2px #CCCCCC;
+    float: left;
+}
+.post img { padding: 0 15px; width: 100%; }
+
+.modal-footer {
+    text-align: left;
+}
+.logowrapper img {
+    width: 200px;
+}
+
+.publishedDate {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.badge {
+    background-color: #777777;
+    border-radius: 0;
+    color: #FFFFFF;
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 1;
+    min-width: 10px;
+    padding: 4px 7px 5px;
+    text-align: center;
+    vertical-align: baseline;
+    white-space: nowrap;
+}
+
+#grid.container .post img { padding: 0; }
+
+
+/* Medium devices */
+
+@media (min-width: 768px) {
+    #grid > #posts .post { width: 335px; }
+    #grid > #posts .post.cs2 { width: 100%; }
+    .post img { padding: 0; }
+}
+
+
+
+/* Medium devices */
+
+@media (min-width: 992px) {
+    #grid > #posts .post { width: 445px; }
+    #grid > #posts .post.cs2 { width: 100%; }
+}
+
+
+
+/* Large devices */
+
+@media (min-width: 1200px) {
+    #grid > #posts .post { width: 260px; }
+    #grid > #posts .post.cs2 { width: 742px; }
+}
+
+
+
+/* Large devices min-width (1200px) + a .post margin (50px) * 2 (100px) = 1300px */
+/* 1300px gives me the clearance I need to keep the margins of the entire #grid (the
+bleed if you will) the same width as the .post margins posts (50px). Basically I'm
+being really picky about whitespace. If you don't care, no problem, just delete this.
+Can this be done with Masonry options? */
+
+@media (min-width: 1300px) {
+    #grid {
+        left: -50px;
+        padding-left: 50px;
+        padding-right: 50px;
+        position: relative;
+    }
+    #grid.container {
+        left: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+.post {
+    background: #FFFFFF;
+}
+
+.item {
+    border: 1px solid #CCCCCC;
+    border-radius: 2px;
+    box-shadow: 0 0 1px #CCCCCC;
+    float: left;
+    margin: 5px;
+    padding: 7px;
+    text-align: center;
+    width: auto;
+}
